@@ -1,10 +1,9 @@
-
 const Navbar = () => {
-    return(
-        <nav>
-            <h1>Title</h1>
-        </nav>
-    );
-}
+  return (
+    <nav>
+      <h1>Title</h1>
+    </nav>
+  );
+};
 
 export default Navbar;
