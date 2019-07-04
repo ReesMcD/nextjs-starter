@@ -1,12 +1,12 @@
-import Meta from '../components/meta/meta.component';
+import Navbar from '../components/navigation/navbar.component';
 
-const Base = children => {
+const Base = ({ children }) => {
   return (
     <div>
-      <Meta />
-      {children}
+      <header />
+      <main>{children}</main>
+      <footer />
     </div>
   );
 };
-
 export default Base;

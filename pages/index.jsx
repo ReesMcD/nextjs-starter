@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Page from '../layouts/main.layout';
 
 const Index = props => {
   useEffect(() => {
@@ -7,15 +6,13 @@ const Index = props => {
   });
 
   return (
-    <Page>
-      <h2>{props.title}</h2>
-    </Page>
+    <div>
+      <h2>Hello World</h2>
+    </div>
   );
 };
 
 Index.getInitialProps = async function() {
-  console.log('Props');
-
   return {
     title: 'Home Page'
   };

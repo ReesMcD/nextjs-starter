@@ -1,22 +1,22 @@
 import React, { useEffect } from 'react';
 
-const Posts = props => {
+const User = props => {
   useEffect(() => {
     console.log('mounted');
   });
 
   return (
     <div>
-      <h2>Posts {props.title}</h2>
+      <h2>User: {props.title}</h2>
     </div>
   );
 };
 
-Posts.getInitialProps = async function(context) {
+User.getInitialProps = async function(context) {
   const { id } = context.query;
   return {
     title: id
   };
 };
 
-export default Posts;
+export default User;

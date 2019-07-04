@@ -1,7 +1,5 @@
 import Head from 'next/head';
 
-import '../../styles/index.scss';
-
 const Meta = () => (
   <Head>
     <title>next starter</title>
